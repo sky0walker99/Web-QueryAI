@@ -1,3 +1,4 @@
+import asyncio
 import google.generativeai as genai
 
 
@@ -8,7 +9,7 @@ class AIModel():
         self.model = genai.GenerativeModel( 
             model_name=model_name ,
             generation_config=generation_config ,
-            tools="code_execution",
+            #tools="code_execution",
             system_instruction=system_instruction
         )
         self.chat = self.model.start_chat(history=[]) #Initialsing chat for this model.

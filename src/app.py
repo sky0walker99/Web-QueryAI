@@ -13,7 +13,7 @@ from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
 from webdriver_manager.chrome import ChromeDriverManager
-
+from playwright.async_api import async_playwright
 # Load the API key from the .env file
 load_dotenv()
 genai.configure(api_key=os.environ["API_KEY"])

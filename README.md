@@ -1,12 +1,23 @@
 # Web-QueryAI
 Web-QueryAI uses @[crawl4ai](https://github.com/unclecode/crawl4ai) for crawling and scraping data and then gives it to an llm (most probably Gemini)
 
-#For running Web-QueryAI
+
+#Currently the website is under development
+https://web-queryai.onrender.com 
+
+
+#For running Web-QueryAI locally
+Follow These Steps
+
 Get free api key on - https://aistudio.google.com/app/apikey
 move it in .env
 
+To run the application after pasting the api key in .env ,
 
-
+```bash
+cd src
+streamlit run app.py
+```
 
 
 

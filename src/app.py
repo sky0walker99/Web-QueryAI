@@ -48,11 +48,10 @@ def main(url, prompt, model):
         raise
 
 # Streamlit UI
-st.set_page_config(page_title="Web-QueryAI", layout="wide")
+st.set_page_config(page_title="Web-QueryAI", layout="wide", initial_sidebar_state="expanded")
 
 # Sidebar configuration
 with st.sidebar:
-    
     st.title("Settings")
     model = st.selectbox(
         "Choose a model:",
